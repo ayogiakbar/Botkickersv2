@@ -65,7 +65,7 @@ def bot(op):
                else:
                   if cmd == "*help":
                     if sender in Me:
-                     cl.sendMessage(to, "*Help Message*\n\n*kick\n*kickall\n*cancelall\n*kickcancelall\n*status\n*about\n\n*Settings*\nautojoinkick:on|off\nautojoinkick:on|off")
+                     cl.sendMessage(to, "*Help Message*\n\n*kick\n*kickall\n*cancelall\n*kickcancelall\n*status\n*about\n\n*Settings*\nautojoinkick:on|off\nautojointicket:on|off")
                   if cmd =="*status":
                    if sender in Me:
                      try:
