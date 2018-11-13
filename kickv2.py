@@ -47,7 +47,7 @@ def bot(op):
              	pass
          if op.type in [25, 26]:
              msg = op.message
-             text = msg.text
+             text = str(msg.text)
              msg_id = msg.id
              receiver = msg.to
              sender = msg._from
