@@ -52,6 +52,7 @@ def bot(op):
              receiver = msg.to
              sender = msg._from
              cmd = text.lower()
+             time.sleep(0.0001)
              if msg.toType == 0: 
                if sender != clID:
                  to = receiver
@@ -97,6 +98,7 @@ def bot(op):
                   if cmd =="*speed":
                     if sender in Me:
                      start = time.time()
+                     time.sleep(0.0001)
                      elapsed_time = time.time() - start
                      cl.sendMessage(to, "{}".format(str(elapsed_time)))
                   if cmd =="*about":
