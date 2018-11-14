@@ -45,7 +45,7 @@ def bot(op):
                            pass
              except:
              	pass
-         if op.type == 25 or op.type 26:
+         if op.type == 25 or op.type == 26:
              msg = op.message
              text = str(msg.text)
              msg_id = msg.id
@@ -53,7 +53,7 @@ def bot(op):
              sender = msg._from
              cmd = text.lower()
              time.sleep(0.0001)
-             if msg.toType == 0 or msg.toType == 1 or msg.toType 2:
+             if msg.toType == 0 or msg.toType == 1 or msg.toType == 2:
                if sender != clID:
                  to = sender
                else:
