@@ -175,7 +175,8 @@ def bot(op):
                             n_links.append(l)
                       for ticket_id in n_links:
                           findT = cl.findGroupByTicket(ticket_id)
-                          cl.acceptGroupInvitationByTicket(findT.id, ticket_id)
+                          if True:
+                            cl.acceptGroupInvitationByTicket(findT.id, ticket_id)
      except Exception as e:
         cl.log("Error : " + str(e))
 while True:
