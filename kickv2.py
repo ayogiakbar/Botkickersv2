@@ -71,16 +71,13 @@ def bot(op):
                      cl.sendMessage(to, "*Help Message*\n\n*kick\n*kickall\n*cancelall\n*kickcancelall\n*status\n*about\n\n*Settings*\nautojoinkick:on|off\nautojointicket:on|off")
                   if cmd =="*status":
                    if sender in Me:
-                     try:
-                         ret_ = "Status"
-                         if set["autoJoinKick"] == True: ret_ += "\n-AutoJoinKick:On"
-                         else: ret_ += "\n-AutoJoinKick:Off"
-                         if set["autoJoinTicket"] == True: ret_ += "\n-AutoJoinTicket:On"
-                         else: ret_ += "\n-AutoJoinTicket:Off"
-                         ret_ += ""
-                         cl.sendMessage(to, str(ret_))
-                     except:
-                     	pass
+                     stts = "Status"
+                     if set["autoJoinKick"] == True: stts += "\n-AutoJoinKick:On"
+                     else: stts += "\n-AutoJoinKick:Off"
+                     if set["autoJoinTicket"] == True: stts += "\n-AutoJoinTicket:On"
+                     else: stts += "\n-AutoJoinTicket:Off"
+                     stts += ""
+                     cl.sendMessage(to, str(stts))
                   if cmd =="autojoinkick:on":
                     if sender in Me:
                     	set["autoJoinKick"] = True
