@@ -1,1 +1,1 @@
-# Botkickersv2
+Line Bot AutoKick v0.2
